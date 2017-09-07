@@ -1,0 +1,17 @@
+{
+    "name": "netmedia.dashboard",
+    "version": "1.0.0",
+    "description": "Halo. I bims 1 Description",
+    "main": "main.js",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {
+        "electron-debug": "^1.4.0"
+    },
+    "devDependencies": {
+        "electron": "^1.7.5"
+    }
+}
