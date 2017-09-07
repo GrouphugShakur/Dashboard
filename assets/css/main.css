@@ -145,20 +145,20 @@ header nav ul li a:before {
 /*Footer*/
 
 div.footer {
-    padding: 0 30px;
+    /* padding: 0 30px; */
     bottom: 0px;
     width: 100%;
     position: fixed;
     font-size: 60px;
     background: #333;
     line-height: 30px;
-    margin-left: -30px; 
+    padding: 20px 30px;
     z-index: 999999;
 }
 
 div.footer .time{
     display: inline-block;
-    padding: 20px 30px;
+    /* padding: 20px 30px; */
     line-height: 60px;
 }
 
@@ -198,8 +198,8 @@ div.footer .date{
 
 #container{
     float: right;
-    display: inline-block;
-    padding: 20px 0px;
+    /* display: block; */
+    /* padding: 20px 0px; */
     line-height: 60px; 
 }
 
