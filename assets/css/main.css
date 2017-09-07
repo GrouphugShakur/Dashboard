@@ -1,3 +1,12 @@
+/*Fonts*/
+@font-face {
+    font-family:'beezy-font' ;
+    src:url() format('woff2');
+    font-weight: 400;
+    font-style: normal;
+} 
+
+/*Generals*/
 body {
     font-Family: Segoe UI Regular WestEuropean, Segoe UI, sans-serif;
     color: white;
@@ -5,7 +14,6 @@ body {
     margin: 0;
     padding: 0 30px;
 }
-
 
 a{
     text-decoration: none;
@@ -15,17 +23,80 @@ a{
 
 a:hover{
     text-decoration: none;
-    color: #333;
+    color: #000;
     font-weight: 600;
 }
 
-@font-face {
-      font-family:'beezy-font' ;
-      src:url() format('woff2');
-      font-weight: 400;
-      font-style: normal;
-} 
-     
+/*Header*/
+header {
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+}
+
+header #social-icons{
+    float: right;
+    width: 92px;
+    height: 50px;
+}
+
+header #social-icons .social-icons{
+    font-size: 12px;
+    width:45px;
+    height:50px;
+    border-left:1px solid #dfdfdf;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header #social-icons .social-icons span{
+    display: block;
+    margin: 12px 0px 0px 8px;
+    cursor: pointer;
+
+    line-height: 28px;
+}
+
+header nav {
+    float:right;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul{
+    margin:12px 8px 0 0;
+}
+
+header nav ul li{
+    margin: 0 15px 0 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+header nav ul li a{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.icon-user::before{
+    content:'\E77B';
+    margin-left:5px;
+    font-size: 18px;
+}
+
+.icon-settings::before{
+    content:'\E713';
+    margin-left:5px;
+    font-size: 18px;
+}
 
 /*Footer*/
 div.footer {
@@ -392,76 +463,7 @@ html *:after:focus {
     left: 50%;
     transform: translateX(-50%);
 }
-
-header {
-    position: fixed;
-    z-index: 999999;
-    top: 0;
-    left:0;
-    right:0;
-    width: 100%;
-    height: 50px;
-    background: #fff;
-}
-
-header #social-icons{
-    float: right;
-    width: 92px;
-    height: 50px;
-}
-
-header #social-icons .social-icons{
-    font-size: 12px;
-    width:45px;
-    height:50px;
-    border-left:1px solid #dfdfdf;
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-
-header #social-icons .social-icons span{
-    display: block;
-    margin: 12px 0px 0px 8px;
-    cursor: pointer;
-
-    line-height: 28px;
-}
-
-header nav {
-    float:right;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul{
-    margin:12px 8px 0 0;
-}
-
-header nav ul li{
-    margin: 0 15px 0 0;
-    padding: 0;
-    list-style: none;
-    float: left;
-}
-
-header nav ul li a{
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.icon-user::before{
-    content:'\E77B';
-    margin-left:5px;
-    font-size: 18px;
-}
-
-.icon-settings::before{
-    content:'\E713';
-    margin-left:5px;
-    font-size: 18px;
-} */
+ */
 
 
 /*Timer*/
@@ -470,6 +472,7 @@ header nav ul li a{
 
 input{
     background: none;
+    padding-left:30px;
     border: 0;
     font-size: 60px;
     color: #fff;
@@ -587,6 +590,7 @@ button{
 
 ul.timer-list{
     padding: 0;
+    padding-top:80px;
     margin: 0;
 }
 

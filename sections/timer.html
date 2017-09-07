@@ -15,7 +15,24 @@
 </head>
 
 <body>
-    <h1>Timer</h1>
+    <header>          
+        <div id="social-icons">
+            <a><div class="social-icons"><span class="ms-Icon icon-settings"></span></div></a>
+            <a><div class="social-icons"><span class="ms-Icon icon-user"></span></div></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="#">O365</a></li>
+                <li><a href="#">Social Media</a></li>
+                <li><a href="#">Angie</a></li>
+                <li><a href="#">Fabric UI</a></li>
+                <li><a href="timer.html">Timer</a></li>
+            </ul>
+        </nav>   
+    </header>
+
+    <!-- <h1>Timer</h1> -->
         <!-- Timer list-->
         <ul class="timer-list">
             <li>
@@ -29,7 +46,13 @@
                         <button class="play-button paused"><div class="left"></div><div class="right"></div><div class="triangle-1"></div><div class="triangle-2"></div></button>
                         <button class="stop-button"></button>
                     </div>
-                    <div class="project-name"><input placeholder="Project name..."></input></div>
+                    <div class="project-name">
+                        <input id="test" type="text" placeholder="Project name..."></input>
+                        <a onClick="CopyToClipboard()">
+                            <span class="ms-Icon ms-Icon--Copy"></span>
+                            <!-- <img src="../assets/icons/png/32x32.png" /> -->
+                        </a>
+                    </div>
                 </div>
             </li>
             <!-- <li>
@@ -205,6 +228,20 @@ $(".stop-button").click(function () {
         
         </script>
 
+<script type="text/javascript">
+    
+    function CopyToClipboard()
+    
+    {
+    
+    document.getElementById('test').focus();
+    
+    document.getElementById('test').select(); 
+    document.execCommand('Copy');
+    
+    }
+    
+    </script>
 
 </body>
 
