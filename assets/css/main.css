@@ -527,7 +527,7 @@ html *:after:focus {
 
 input{
     background: none;
-    width: 620px;
+    width: 700px;
     border: 0;
     font-size: 40px;
     color: #fff;
@@ -535,7 +535,7 @@ input{
     outline: none;
 }
 
-#timer{
+.timer{
     width: 100%;
     border-bottom: 2px solid #999;
     display:flex;
