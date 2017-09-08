@@ -26,6 +26,10 @@ a:hover{
     text-decoration: none;
     font-weight: 600;
 }
+#wrapper{
+    margin-top:120px;
+    margin-left: 30px;
+}
 
 /*Header*/
 header {
@@ -157,7 +161,6 @@ div.footer {
 
 div.footer .time{
     display: inline-block;
-    /* padding: 20px 30px; */
     line-height: 60px;
 }
 
@@ -187,11 +190,17 @@ div.footer .date{
 }
 
 /*Fabric Ui Font Color*/
-.ms-font-su, .ms-font-xl, .ms-font-xxl{
+.ms-font-su,
+.ms-font-xl,
+.ms-font-xxl{
     color:white;
 }
 
-.ms-font-m, .ms-font-m-plus, .ms-font-s, .ms-font-s-plus, .ms-font-xs{
+.ms-font-m,
+.ms-font-m-plus,
+.ms-font-s,
+.ms-font-s-plus,
+.ms-font-xs{
     color:#ccc;
 }
 
@@ -210,7 +219,7 @@ div.footer .date{
 /*OpenWeatherMap - FabricUI-Icons*/
 /*DAY*/
 .weather-icon-01d::before{
-    content:'\EC8A'; /*content:'\E706';*/
+    content:'\EC8A';
 }
 .weather-icon-02d::before{
     content:'\E9C0';
@@ -236,7 +245,7 @@ div.footer .date{
 
 /*NIGHT*/
 .weather-icon-01n::before{
-    content:'\E9C2'; /*content:'\E706';*/
+    content:'\E9C2';
 }
 .weather-icon-02n::before{
     content:'\E9C1';
@@ -518,7 +527,7 @@ html *:after:focus {
 
 input{
     background: none;
-    /* padding-left:30px; */
+    width: 620px;
     border: 0;
     font-size: 40px;
     color: #fff;
@@ -528,8 +537,7 @@ input{
 
 #timer{
     width: 100%;
-    border-bottom: 1px solid #999;
-    /* position: absolute; */
+    border-bottom: 2px solid #999;
     display:flex;
     padding-bottom: 10px;
 }
@@ -546,68 +554,63 @@ input{
     margin-left: 80px;
 }
 .play-button {
-  height: 30px;
-  width: 30px;
-  display: block;
-  /* margin: 60px auto; */
-  overflow: hidden;
-  position: relative;
-  float:left;
+    height: 30px;
+    width: 30px;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    float:left;
 }
 .left {
-  height: 100%;
-  float: left;
-  background-color: #fff;
-  width: 36%;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-  overflow: hidden;
+    height: 100%;
+    float: left;
+    background-color: #fff;
+    width: 36%;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    overflow: hidden;
 }
 .triangle-1 {
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
+    transform: translate(0, -100%);
 }
 .triangle-2 {
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
+    transform: translate(0, 100%);
 }
 .triangle-1,
 .triangle-2 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: transparent;
-  width: 0;
-  height: 0;
-  border-right: 30px solid #333;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  -webkit-transition: -webkit-transform 0.25s ease;
-  transition: -webkit-transform 0.25s ease;
-  transition: transform 0.25s ease;
-  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    width: 0;
+    height: 0;
+    border-right: 30px solid #333;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    -webkit-transition: -webkit-transform 0.25s ease;
+    transition: -webkit-transform 0.25s ease;
+    transition: transform 0.25s ease;
+    transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 .right {
-  height: 100%;
-  float: right;
-  width: 36%;
-  background-color: #fff;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+    height: 100%;
+    float: right;
+    width: 36%;
+    background-color: #fff;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
 }
 .paused .left {
-  width: 50%;
+    width: 50%;
 }
 .paused .right {
-  width: 50%;
+    width: 50%;
 }
 .paused .triangle-1 {
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 .paused .triangle-2 {
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
+    transform: translate(0, 50%);
 }
 
 /*Square*/
@@ -618,7 +621,6 @@ button.stop-button{
     height: 30px;
     width: 30px;
     display: block;
-    /* margin: 60px auto; */
     overflow: hidden;
     position: relative;
     background: #fff;
@@ -649,7 +651,7 @@ ul.timer-list li {
 #clipboard{
     position: absolute;
     right: 0;
-    /* margin-top: -45px; */
+    margin-top: -45px; 
     margin-right: 30px;
 }
 

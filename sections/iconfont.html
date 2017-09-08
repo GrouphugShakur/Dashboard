@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <link rel="stylesheet" href="../assets/css/animation.css">
-    <link rel="stylesheet" href="../assets/css/doc-font.css">
-    <!--[if IE 7]><link rel="stylesheet" href="../assets/css/doc-font-ie7.css"><![endif]-->
+
+      <!-- Titel -->
+      <title>media.net.dashboard</title>
+
+      <!-- Meta Data -->
+      <meta charset="utf-8" />
+      <meta name="author" content="Benjamin Herbold" />
+      <meta name="description" content="Entwicklungsprojekt für KnowHow-Aufbau." />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Stylesheet -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+      <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/4.1.0/css/fabric.min.css">
+      <link rel="stylesheet" href="../assets/css/main.css">
+      <link rel="stylesheet" href="../assets/css/animation.css">
+      <link rel="stylesheet" href="../assets/css/doc-font.css">
+      <!--[if IE 7]><link rel="stylesheet" href="../assets/css/doc-font-ie7.css"><![endif]-->
+
+      <!-- Javascript/jQuery -->
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
   </head>
+
   <body>
-     <i class="demo-icon icon--file-png--small"><span></span></i>
-     <i class="demo-icon icon--file-jpg--small"><span></span></i>
-     <i class="demo-icon icon--file-doc--small"><span></span></i>
-     <i class="demo-icon icon--file-xls--small"><span></span></i>
-     <i class="demo-icon icon--file-ppt--small"><span></span></i>
-     <i class="demo-icon icon--file-zip--small"><span></span></i>
-     <i class="demo-icon icon--file-pdf--small"><span></span></i>
-     <i class="demo-icon icon--file-video--small"><span></span></i>
-     <i class="demo-icon icon--file-file--small"><span></span></i>
+    <header>
+      <!-- <div id="social-icons">
+                <a><div class="social-icons"><span class="ms-Icon icon-settings"></span></div></a>
+                <a><div class="social-icons"><span class="ms-Icon icon-user"></span></div></a>
+            </div> -->
+      <nav>
+        <ul>
+          <li><a href="../index.html">Start</a></li>
+          <li><a href="#">O365</a></li>
+          <li><a href="#">Social Media</a></li>
+          <li><a href="#">Angie</a></li>
+          <li><a href="#">Fabric UI</a></li>
+          <li><a href="timer.html">Timer</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="wrapper">
+      <i class="demo-icon icon--file-png--small"><span></span></i>
+      <i class="demo-icon icon--file-jpg--small"><span></span></i>
+      <i class="demo-icon icon--file-doc--small"><span></span></i>
+      <i class="demo-icon icon--file-xls--small"><span></span></i>
+      <i class="demo-icon icon--file-ppt--small"><span></span></i>
+      <i class="demo-icon icon--file-zip--small"><span></span></i>
+      <i class="demo-icon icon--file-pdf--small"><span></span></i>
+      <i class="demo-icon icon--file-video--small"><span></span></i>
+      <i class="demo-icon icon--file-file--small"><span></span></i>
+    </div>
+
+    <!-- Wrapper -->
+    <div id="wrapper"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="time">17:45</div>
+      <div class="date">Aug 15</div>
+      <!-- Stadt:<input id="city" value="Saarbrucken"></input> -->
+      <div id="container">
+        <!-- <div id="currentLocation"></div> -->
+        <div id="currentTemp">...</div>
+      </div>
+    </div>
+
+    <!-- Javascript/jQuery -->
+    <script src="../assets/js/dashboard.js"></script>
   </body>
+
 </html>
