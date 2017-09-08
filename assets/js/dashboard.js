@@ -40,8 +40,6 @@
 //   }
 // }
 
-
-
 //Weather APP
 
 var api = 'http://api.openweathermap.org/data/2.5/weather?q=';
@@ -65,24 +63,18 @@ function render(wd) {
 
 }
 
-$(function () {
-
-  var loc;
-  $.getJSON('http://ipinfo.io', function (d) {
-    console.log("Zuordnung der Daten...")
-    loc = d.loc.split(",");
-    console.log(loc);
-
-    $.getJSON(url, function (apiData) {
-      wd = apiData;
-
-      render(apiData);
-
-    })
-
-  })
-})
-
+// $(function () {
+//   var loc;
+//   $.getJSON('http://ipinfo.io', function (d) {
+//     console.log("Zuordnung der Daten...")
+//     loc = d.loc.split(",");
+//     console.log(loc);
+//     $.getJSON(url, function (apiData) {
+//       wd = apiData;
+//       render(apiData);
+//     })
+//   })
+// })
 
 // Uhrzeit
 function time() {
@@ -105,9 +97,6 @@ function time() {
   jQuery('.footer .date').html(months[month] + ' ' + day);
 }
 time();
-
-
-
 
 
 
@@ -367,20 +356,20 @@ var formButtonListener = function () {
 };
 
 
-//Timer
-//Play/Pause
+// //Timer
+// //Play/Pause
 
-$(".play-button").click(function () {
-  $(this).toggleClass("paused");
-  $('#timer').css("border-color", "#FA0085");
+// $(".play-button").click(function () {
+//   $(this).toggleClass("paused");
+//   $('#timer').css("border-color", "#FA0085");
   
-  $('.counter').css("color", "#FFFFFF");
-});
+//   $('.counter').css("color", "#FFFFFF");
+// });
 
-$(".stop-button").click(function () {
-  $('#timer').css("border-color", "#999");
-  $('.counter').css("color", "#999");
-});
+// $(".stop-button").click(function () {
+//   $('#timer').css("border-color", "#999");
+//   $('.counter').css("color", "#999");
+// });
 
 //Timer
 
@@ -441,3 +430,26 @@ var ss = document.getElementById('timer');
     mins.innerHTML = secs.innerHTML = cents.innerHTML = pad(0);
   }
 });
+
+
+//Timer - Play/Pause Button
+
+$(".play-button").click(function () {
+  $(this).toggleClass("paused");
+  $('#timer').css("border-color", "#FA0085");
+
+  $('.counter').css("color", "#FFFFFF");
+});
+
+$(".stop-button").click(function () {
+  $('#timer').css("border-color", "#999");
+  $('.counter').css("color", "#999");
+});
+
+//Copy to Clipboard
+
+function CopyToClipboard() {
+  document.getElementById('test').focus();
+  document.getElementById('test').select();
+  document.execCommand('Copy');
+}

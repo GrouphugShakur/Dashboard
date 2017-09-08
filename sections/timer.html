@@ -127,34 +127,6 @@
                 mins.innerHTML = secs.innerHTML = cents.innerHTML = pad(0);
             }
         });
-
-
-        //Timer
-        //Play/Pause
-
-        $(".play-button").click(function () {
-            $(this).toggleClass("paused");
-            $('#timer').css("border-color", "#FA0085");
-
-            $('.counter').css("color", "#FFFFFF");
-        });
-
-        $(".stop-button").click(function () {
-            $('#timer').css("border-color", "#999");
-            $('.counter').css("color", "#999");
-        });
     </script>
-    <script type="text/javascript">
-        function CopyToClipboard() {
-
-            document.getElementById('test').focus();
-
-            document.getElementById('test').select();
-            document.execCommand('Copy');
-
-        }
-    </script>
-
 </body>
-
 </html>
