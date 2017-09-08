@@ -83,7 +83,6 @@ header nav ul li{
 }
 
 header nav ul li a{
-    /* text-transform: uppercase; */
     font-size: 18px;
     font-Family: Segoe UI Regular WestEuropean, Segoe UI, sans-serif;
     color:#95989A;
@@ -208,6 +207,7 @@ div.footer .date{
     margin-left: 20px;
 }
 
+/*OpenWeatherMap - FabricUI-Icons*/
 /*DAY*/
 .weather-icon-01d::before{
     content:'\EC8A'; /*content:'\E706';*/
@@ -656,4 +656,3 @@ ul.timer-list li {
 a#clipboard:hover{
     color:#FA0085;
 }
-
