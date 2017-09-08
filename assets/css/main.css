@@ -658,3 +658,8 @@ ul.timer-list li {
 a#clipboard:hover{
     color:#FA0085;
 }
+
+.timer-result{
+    margin-left:30px;
+    margin-top: 30px;
+}
