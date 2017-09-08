@@ -649,6 +649,11 @@ ul.timer-list li {
 #clipboard{
     position: absolute;
     right: 0;
-    margin-top: -45px;
+    /* margin-top: -45px; */
     margin-right: 30px;
 }
+
+a#clipboard:hover{
+    color:#FA0085;
+}
+

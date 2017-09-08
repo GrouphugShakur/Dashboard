@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>netmedia.dashboard</title>
+    <!-- Titel -->
+    <title>media.net.dashboard</title>
+
+    <!-- Meta Data -->
     <meta charset="utf-8" />
+    <meta name="author" content="Benjamin Herbold" />
+    <meta name="description" content="Entwicklungsprojekt für KnowHow-Aufbau." />    
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/4.1.0/css/fabric.min.css">
-    <link href="../assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/main.css">
 
+    <!-- Javascript/jQuery -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
@@ -67,66 +74,9 @@
         </div>
     </div>
 
-     <script src="../assets/js/dashboard.js"></script>
-    <!--<script src="../assets/js/menu.js"></script>-->
+<!-- Javascript/jQuery -->
+<script src="../assets/js/dashboard.js"></script>
+<script src="../assets/js/timer.js"></script>
 
-    <script>
-    var ss = document.getElementById('timer');
-        console.log(ss);
-        [].forEach.call(ss, function (s) {
-            var currentTimer = 0,
-                interval = 0,
-                lastUpdateTime = new Date().getTime(),
-                start = s.querySelector('button.play-button.paused'),
-                stop = s.querySelector('button.play-button'),
-                reset = s.querySelector('button.stop-button'),
-                mins = s.querySelector('span.minutes'),
-                secs = s.querySelector('span.seconds'),
-                cents = s.querySelector('span.centiseconds');
-
-            start.addEventListener('click', startTimer);
-            stop.addEventListener('click', stopTimer);
-            reset.addEventListener('click', resetTimer);
-
-            function pad(n) {
-                return ('00' + n).substr(-2);
-            }
-
-            function update() {
-                var now = new Date().getTime(),
-                    dt = now - lastUpdateTime;
-
-                currentTimer += dt;
-
-                var time = new Date(currentTimer);
-
-                mins.innerHTML = pad(time.getMinutes());
-                secs.innerHTML = pad(time.getSeconds());
-                cents.innerHTML = pad(Math.floor(time.getMilliseconds() / 10));
-
-                lastUpdateTime = now;
-            }
-
-            function startTimer() {
-                if (!interval) {
-                    lastUpdateTime = new Date().getTime();
-                    interval = setInterval(update, 1);
-                }
-            }
-
-            function stopTimer() {
-                clearInterval(interval);
-                interval = 0;
-            }
-
-            function resetTimer() {
-                stopTimer();
-
-                currentTimer = 0;
-
-                mins.innerHTML = secs.innerHTML = cents.innerHTML = pad(0);
-            }
-        });
-    </script>
 </body>
 </html>
