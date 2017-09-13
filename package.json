@@ -9,7 +9,9 @@
         "url": ""
     },
     "dependencies": {
-        "electron-debug": "^1.4.0"
+        "electron-debug": "^1.4.0",
+        "office-ui-fabric-core": "^7.2.0",
+        "perfect-scrollbar": "^0.8.1"
     },
     "devDependencies": {
         "electron": "^1.7.5"
