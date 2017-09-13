@@ -1,5 +1,5 @@
 //Timer
-
+'use strict';
 var timer = document.getElementsByClassName('timer');
 
 [].forEach.call(timer, function (s) {
@@ -67,10 +67,28 @@ $(".stop-button").click(function () {
     $('.counter').css("color", "#999");   
 });
   
-  //Copy to Clipboard
-  
+  //Kopieren in Zwischenablage
+
 function CopyToClipboard() {
-    document.getElementById('test').focus();
-    document.getElementById('test').select();
+    document.getElementById('project-name').focus();
+    document.getElementById('project-name').select();
     document.execCommand('Copy');
 }
+
+// Ergebnis-Liste erstellen per Klick
+
+(function () {
+	function init() {
+		document.getElementById('clipboard')
+			.addEventListener('click', eingabe);
+	}
+	function eingabe() {
+        var result = document.getElementById("project-name").value;
+        if (result != ""){
+		document.getElementById('timer-result').innerHTML = result;
+        }else{
+        document.getElementById('timer-result').innerHTML = "Du sollest schon einen Projektnamen eingeben.";
+        }
+	}
+	document.addEventListener('DOMContentLoaded', init);
+}());

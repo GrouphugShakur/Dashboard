@@ -73,7 +73,7 @@
         <div class="date">Aug 15</div>
         <!-- Stadt:<input id="city" value="Saarbrucken"></input> -->
         <div id="container">
-            <!-- <div id="currentLocation"></div> -->
+            <div id="currentLocation"></div>
             <div id="currentTemp">...</div>
         </div>
     </div>
@@ -82,22 +82,7 @@
 <script src="../assets/js/dashboard.js"></script>
 <script src="../assets/js/timer.js"></script>
 <script>
-'use strict';
-(function () {
-	function init() {
-		document.getElementById('clipboard')
-			.addEventListener('click', eingabe);
-	}
-	function eingabe() {
-        var result = document.getElementById("project-name").value;
-        if (result != ""){
-		document.getElementById('timer-result').innerHTML = result;
-        }else{
-        document.getElementById('timer-result').innerHTML = "Du sollest schon einen Projektnamen eingeben.";
-        }
-	}
-	document.addEventListener('DOMContentLoaded', init);
-}());
+
 </script>
 </body>
 </html>

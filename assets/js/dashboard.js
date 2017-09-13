@@ -16,8 +16,8 @@ function time() {
       minutes = "0" + minutes;
     }
   
-    jQuery('.footer .time').html(hours + ':' + minutes);
-    jQuery('.footer .date').html(months[month] + ' ' + day);
+    $('.footer .time').html(hours + ':' + minutes);
+    $('.footer .date').html(months[month] + ' ' + day);
   }
 time();
 
@@ -38,6 +38,7 @@ function render(wd) {
   var iconSrc = "http://openweathermap.org/img/w/" + icon + ".png";
 
   $('#currentLocation').html(currentLocation);
+    console.log(currentLocation);
   $('#currentTemp').html(currentTemp + '°');
   $('#currentWeather').html(currentWeather);
   $('#currentTemp').append('<i class="ms-Icon weather-icon-' + icon + '"></i>');
