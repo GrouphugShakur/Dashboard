@@ -685,6 +685,16 @@ a#clipboard:hover{
 #timer-result{
     margin-left:30px;
     margin-top: 30px;
+    font-size: 20px;
+}
+.project-result{
+    color: #FA0085;
+    font-weight: 700;
+}
+
+.gesamtdauer{
+    margin-right: 30px;
+    float: right;
 }
 
 /*Scrollbar*/

@@ -66,7 +66,7 @@ $(".stop-button").click(function () {
     $('.timer').css("border-color", "#999");
     $('.counter').css("color", "#999");
     $(".stop-button").css("background", "rgb(101,101,101)");
-    if ($(".paused").length === 0){
+    if ($(".play-button.paused").length === 0){
         $('.play-button').addClass('paused');
     }
 });
@@ -87,10 +87,15 @@ function CopyToClipboard() {
 			.addEventListener('click', eingabe);
 	}
 	function eingabe() {
-        var result = document.getElementById("project-name").value;
-        var zeit = $('.timer').text();
-        if (result != ""){
-		document.getElementById('timer-result').innerHTML = zeit + result;
+        var project = document.getElementById("project-name").value;
+        var dauer = $('.timer').text();
+        var uhrzeit = $('.footer .time').text();
+        
+        var hrs = $('.hours').text();
+        var min = $('.minutes').text();
+
+        if (dauer != ""){
+		document.getElementById('timer-result').innerHTML = 'Start: ' + '- Ende: ' + uhrzeit + ' Uhr ' + 'Projekt:  <span class="project-result">' + project + '</span>' + '<span class="gesamtdauer">Dauer: ' + dauer + '</span>' ;
         }else{
         document.getElementById('timer-result').innerHTML = "Du sollest schon einen Projektnamen eingeben.";
         }
