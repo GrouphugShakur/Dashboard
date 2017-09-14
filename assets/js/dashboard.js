@@ -1,6 +1,6 @@
 // var $ = require('jQuery');
 // Uhrzeit
-$(document).ready(  function () {
+// $(document).ready(  function () {
 // document.addEventListener("DOMContentLoaded", function(event) { 
 function time() {
   
@@ -61,4 +61,4 @@ $(function () {
   });
 });
 
-});
+// });

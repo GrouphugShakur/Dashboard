@@ -31,7 +31,7 @@ a:hover{
     margin-top:10px;
     position: relative;
     height:auto;
-    max-height: 545px;
+    max-height: 535px;
     overflow: auto;
     top:90px;
 }
@@ -698,7 +698,7 @@ a#clipboard:hover{
 #yammer{
     position: relative;
     background-color: grey;
-    height: 540px;
+    height: 535px;
     overflow: hidden;
 }
 
@@ -707,7 +707,7 @@ a#clipboard:hover{
     position: relative;
     background: #FFF;
     color:#111;
-    height: 540px;
+    height: 535px;
     overflow: hidden;
 }
 
@@ -716,3 +716,25 @@ a#clipboard:hover{
     overflow: hidden;
 }
 
+/*Perfect Scrollbar*/
+
+.ps > .ps__scrollbar-y-rail{
+    width: 14px;
+}
+
+
+.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
+    border-radius: none;
+}
+
+.ps:hover > .ps__scrollbar-y-rail:hover{
+    background-color: #444;
+}
+
+.ps:hover.ps--in-scrolling.ps--y > .ps__scrollbar-y-rail{
+    background: #222;
+}
+
+.ps.ps--active-x > .ps__scrollbar-x-rail, .ps.ps--active-y > .ps__scrollbar-y-rail{
+    border-radius: 6px;
+}

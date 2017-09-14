@@ -59,12 +59,13 @@ $(".play-button").click(function () {
     $(this).toggleClass("paused");
     $('.timer').css("border-color", "#FA0085");
     $('.counter').css("color", "#FFFFFF");
-    
+    $(".stop-button").css("background", "#FA0085")
 });
   
 $(".stop-button").click(function () {
     $('.timer').css("border-color", "#999");
-    $('.counter').css("color", "#999");   
+    $('.counter').css("color", "#999");
+    $(".stop-button").css("background", "rgb(101,101,101)")
 });
   
   //Kopieren in Zwischenablage
