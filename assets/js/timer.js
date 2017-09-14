@@ -65,7 +65,10 @@ $(".play-button").click(function () {
 $(".stop-button").click(function () {
     $('.timer').css("border-color", "#999");
     $('.counter').css("color", "#999");
-    $(".stop-button").css("background", "rgb(101,101,101)")
+    $(".stop-button").css("background", "rgb(101,101,101)");
+    if ($(".paused").length === 0){
+        $('.play-button').addClass('paused');
+    }
 });
   
   //Kopieren in Zwischenablage
