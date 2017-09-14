@@ -1,5 +1,7 @@
+// var $ = require('jQuery');
 // Uhrzeit
-
+$(document).ready(  function () {
+// document.addEventListener("DOMContentLoaded", function(event) { 
 function time() {
   
     var date = new Date();
@@ -20,6 +22,7 @@ function time() {
     $('.footer .date').html(months[month] + ' ' + day);
   }
 time();
+
 
 //Weather APP
 
@@ -56,4 +59,6 @@ $(function () {
       render(apiData);
     });
   });
+});
+
 });
