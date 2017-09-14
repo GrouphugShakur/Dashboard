@@ -85,8 +85,9 @@ function CopyToClipboard() {
 	}
 	function eingabe() {
         var result = document.getElementById("project-name").value;
+        var zeit = $('.timer').text();
         if (result != ""){
-		document.getElementById('timer-result').innerHTML = result;
+		document.getElementById('timer-result').innerHTML = zeit + result;
         }else{
         document.getElementById('timer-result').innerHTML = "Du sollest schon einen Projektnamen eingeben.";
         }
