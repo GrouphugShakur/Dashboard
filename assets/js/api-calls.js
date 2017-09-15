@@ -1,5 +1,13 @@
 //API Calls
 
+//Yammer
+
+yam.connect.loginButton('#yammer-login', function (resp) {
+  if (resp.authResponse) {
+    document.getElementById('yammer-login').innerHTML = 'Welcome to Yammer!';
+  }
+});
+
 //GIPHY API
 
 const PUBLIC_KEY = 'dc6zaTOxFJmzC';

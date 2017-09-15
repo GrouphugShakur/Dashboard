@@ -4,24 +4,24 @@
         <!-- Titel -->
         <title>medianet.dashboard</title>
         
-            <!-- Meta Data -->
-            <meta charset="utf-8" />
-            <meta name="author" content="Benjamin Herbold" />
-            <meta name="description" content="Entwicklungsprojekt für KnowHow-Aufbau." />    
-            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Meta Data -->
+        <meta charset="utf-8" />
+        <meta name="author" content="Benjamin Herbold" />
+        <meta name="description" content="Entwicklungsprojekt für KnowHow-Aufbau." />    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Javascript/jQuery -->
+        <script src="../assets/js/jquery.min.js"></script>  <!--onload="window.$ = window.jQuery = module.exports;"-->
+        <script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_js_sdk.js" data-app-id="UqeUZakgF19y5auO2kKEKg"></script>
         
-            <!-- Javascript/jQuery -->
-            <script src="../assets/js/jquery.min.js"></script>  <!--onload="window.$ = window.jQuery = module.exports;"-->
-            <script type="text/javascript" src="https://c64.assets-yammer.com/assets/platform_js_sdk.js" data-app-id="UqeUZakgF19y5auO2kKEKg"></script>
-           
+    
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/4.1.0/css/fabric.min.css">
+        <!-- <link rel="stylesheet" href="../node_modules/office-ui-fabric-core/dist/css/fabric.min.css"> -->
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="stylesheet" href="../assets/css/animate.css">
         
-            <!-- Stylesheet -->
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
-            <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/4.1.0/css/fabric.min.css">
-            <!-- <link rel="stylesheet" href="../node_modules/office-ui-fabric-core/dist/css/fabric.min.css"> -->
-            <link rel="stylesheet" href="../assets/css/main.css">
-            <link rel="stylesheet" href="../assets/css/animate.css">
-            
 </head>
 
 <body>
@@ -46,18 +46,14 @@
 
     <!-- Wrapper -->
     <div id="wrapper">
-
         <div class="ms-Grid">
             <div class=" ms-Grid-row">
-                <div id="yammer" class="animated bounceInRight ms-Grid-col ms-sm6 ms-md8 ms-lg9">Yammer
-
+                <div id="yammer" class="animated bounceInRight ms-Grid-col ms-sm6 ms-md8 ms-lg9">
                     <div id="yammer-login"></div>
-
                 </div>
                 <div id="skype" class="animated bounceInRight ms-Grid-col ms-sm6 ms-md4 ms-lg3">Skype</div>
             </div>
           </div>
-
     </div>
 
     <!-- Footer -->
@@ -71,15 +67,9 @@
         </div>
     </div>
 
-<!-- Javascript/jQuery -->
-<script src="../assets/js/dashboard.js"></script>
-<script>
-    yam.connect.loginButton('#yammer-login', function (resp) {
-      if (resp.authResponse) {
-        document.getElementById('yammer-login').innerHTML = 'Welcome to Yammer!';
-      }
-    });
-  </script>
+    <!-- Javascript/jQuery -->
+    <script src="../assets/js/dashboard.js"></script>
+    <script src="../assets/js/api-calls.js"></script>
 
 </body>
 </html>
