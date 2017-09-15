@@ -1,7 +1,5 @@
 //API Calls
-
 //Yammer
-
 yam.connect.loginButton('#yammer-login', function (resp) {
   if (resp.authResponse) {
     document.getElementById('yammer-login').innerHTML = 'Welcome to Yammer!';
@@ -9,7 +7,6 @@ yam.connect.loginButton('#yammer-login', function (resp) {
 });
 
 //GIPHY API
-
 const PUBLIC_KEY = 'dc6zaTOxFJmzC';
 const BASE_URL = 'http://api.giphy.com/v1/gifs/';
 const ENDPOINT = 'search';

@@ -26,8 +26,8 @@ a:hover{
     text-decoration: none;
     font-weight: 600;
 }
+
 #wrapper{
-    /* margin-top:120px; */
     margin-top:10px;
     position: relative;
     height:auto;
@@ -131,12 +131,11 @@ header nav ul li a:before {
     transition: all 0.3s ease-in-out 0s;
 }
 
-  header nav ul li a:hover:before {
+header nav ul li a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
 }
-
 
 .icon-user::before{
     content:'\E77B';
@@ -151,9 +150,7 @@ header nav ul li a:before {
 }
 
 /*Footer*/
-
 div.footer {
-    /* padding: 0 30px; */
     bottom: 0px;
     width: 100%;
     height: 105px;
@@ -179,6 +176,10 @@ div.footer .date{
 }
 
 /*Fabric UI*/
+.ms-Grid-row{
+    overflow: hidden;
+}
+
 .icon-list ul li {
     float: left;
     font-size: 11px;
@@ -212,8 +213,6 @@ div.footer .date{
 
 #container{
     float: right;
-    /* display: block; */
-    /* padding: 20px 0px; */
     line-height: 60px; 
 }
 
@@ -287,7 +286,6 @@ div.footer .date{
 .weather-icon-13n::before{
     content:'\E9FD';
 }
-
 
 /*SuperSearch*/
 html {
@@ -493,57 +491,8 @@ html *:after:focus {
   height: 375px;
 }
 
-/*Stopuhr*/
-/* .controls {
-    position: fixed;
-    text-align: center;
-    top: 1em;
-    width: 100%;
-}
-  
-.button {
-    color: #bbb;
-    font-size: 4vw;
-    margin: 0 0.5em;
-    text-decoration: none;
-}
-  
-.button:first-child {
-      margin-left: 0;
-}
-  
-.button:last-child {
-      margin-right: 0;
-}
-  
-.button:hover {
-    color: white;
-}
-  
-.stopwatch {
-    font-size: 20vw;
-    height: 100%;
-    line-height: 100vh;
-    text-align: center;
-}
-  
-.results {
-    border-color: lime;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
- */
-
-
 /*Timer*/
-
 /*Play/Pause*/
-
 input{
     background: none;
     width: 700px;
@@ -560,9 +509,11 @@ input{
     display:flex;
     padding-bottom: 10px;
 }
+
 .counter{
     color: #999;
 }
+
 .counter,
 .project-name{
     font-size: 40px; 
@@ -572,6 +523,7 @@ input{
     margin-top: 15px;
     margin-left: 80px;
 }
+
 .play-button {
     height: 30px;
     width: 30px;
@@ -580,6 +532,7 @@ input{
     position: relative;
     float:left;
 }
+
 .left {
     height: 100%;
     float: left;
@@ -589,12 +542,15 @@ input{
     transition: all 0.25s ease;
     overflow: hidden;
 }
+
 .triangle-1 {
     transform: translate(0, -100%);
 }
+
 .triangle-2 {
     transform: translate(0, 100%);
 }
+
 .triangle-1,
 .triangle-2 {
     position: absolute;
@@ -611,6 +567,7 @@ input{
     transition: transform 0.25s ease;
     transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
+
 .right {
     height: 100%;
     float: right;
@@ -619,15 +576,19 @@ input{
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
 }
+
 .paused .left {
     width: 50%;
 }
+
 .paused .right {
     width: 50%;
 }
+
 .paused .triangle-1 {
     transform: translate(0, -50%);
 }
+
 .paused .triangle-2 {
     transform: translate(0, 50%);
 }
@@ -636,6 +597,7 @@ input{
 button.stop-button{
     margin-left: 25px;
 }
+
 .stop-button {
     height: 30px;
     width: 30px;
@@ -687,13 +649,14 @@ a#clipboard:hover{
     margin-top: 30px;
     font-size: 20px;
 }
+
 .project-result{
     color: #FA0085;
     font-weight: 700;
+    text-align: center;
 }
 
-.gesamtdauer{
-    margin-right: 30px;
+.dauer{
     float: right;
 }
 
@@ -721,17 +684,16 @@ a#clipboard:hover{
     overflow: hidden;
 }
 
-
-.ms-Grid-row{
-    overflow: hidden;
+.ergebnis{
+    border-bottom: 2px solid #FA0085;
+    padding-bottom: 10px;
+    margin-right: 30px;
 }
 
 /*Perfect Scrollbar*/
-
 .ps > .ps__scrollbar-y-rail{
     width: 14px;
 }
-
 
 .ps > .ps__scrollbar-y-rail > .ps__scrollbar-y{
     border-radius: none;

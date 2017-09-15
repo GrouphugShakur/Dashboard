@@ -1,7 +1,5 @@
 // Uhrzeit
-
 function time() {
-  
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -23,7 +21,6 @@ time();
 
 
 //Weather APP
-
 var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
 var city = 'Saarbrucken';
 var apiKey = '&APPID=b53044e7fafcf8c5c07d2cfd45a734d1';

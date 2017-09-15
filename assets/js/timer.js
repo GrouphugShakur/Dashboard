@@ -1,5 +1,5 @@
 //Timer
-'use strict';
+// 'use strict';
 var timer = document.getElementsByClassName('timer');
 
 [].forEach.call(timer, function (s) {
@@ -54,7 +54,6 @@ var timer = document.getElementsByClassName('timer');
 });
 
 //Timer - Play/Pause Button
-
 $(".play-button").click(function () {
     $(this).toggleClass("paused");
     $('.timer').css("border-color", "#FA0085");
@@ -71,8 +70,7 @@ $(".stop-button").click(function () {
     }
 });
   
-  //Kopieren in Zwischenablage
-
+//Kopieren in Zwischenablage
 function CopyToClipboard() {
     document.getElementById('project-name').focus();
     document.getElementById('project-name').select();
@@ -80,21 +78,25 @@ function CopyToClipboard() {
 }
 
 // Ergebnis-Liste erstellen per Klick
-
 (function () {
 	function init() {
 		document.getElementById('clipboard')
 			.addEventListener('click', eingabe);
 	}
 	function eingabe() {
-        var project = document.getElementById("project-name").value;
+
+        var dateTime = Date.now();
+        var timestamp = Math.floor(dateTime / 1000);
         var dauer = $('.timer').text();
         var uhrzeit = $('.footer .time').text();
         var hrs = $('.hours').text();
         var min = $('.minutes').text();
 
+        var project = document.getElementById("project-name").value;
+
+
         if (dauer != ""){
-		document.getElementById('timer-result').innerHTML = 'Start: ' + '- Ende: ' + uhrzeit + ' Uhr ' + 'Projekt:  <span class="project-result">' + project + '</span>' + '<span class="gesamtdauer">Dauer: ' + dauer + '</span>' ;
+		document.getElementById('timer-result').innerHTML = '<div class="ergebnis"><span class="project-result">Projekt: ' + project + '</span></br>' + '<span>Start: ' + uhrzeit + ' Uhr - ' + uhrzeit + ' Uhr</span>' +  '<span class="dauer">Dauer: ' + dauer + '</span></div>' ;
         }else{
         document.getElementById('timer-result').innerHTML = "Du sollest schon einen Projektnamen eingeben.";
         }
