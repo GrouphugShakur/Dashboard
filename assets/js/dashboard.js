@@ -48,7 +48,7 @@ function render(wd) {
 
 $(function () {
   var loc;
-  $.getJSON('http://ipinfo.io', function (d) {
+  $.getJSON('https://ipinfo.io', function (d) {
     console.log("Zuordnung der Daten...")
     loc = d.loc.split(",");
     console.log(loc);
