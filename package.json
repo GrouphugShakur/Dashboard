@@ -10,6 +10,7 @@
     },
     "dependencies": {
         "electron-debug": "^1.4.0",
+        "moment": "^2.18.1",
         "office-ui-fabric-core": "^7.2.0",
         "perfect-scrollbar": "^0.8.1"
     },

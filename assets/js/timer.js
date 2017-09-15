@@ -90,7 +90,9 @@ function CopyToClipboard() {
         var project = document.getElementById("project-name").value;
         var dauer = $('.timer').text();
         var uhrzeit = $('.footer .time').text();
-        
+        var x=new Date();
+        x.setTime;
+        alert(x.toGMTString());
         var hrs = $('.hours').text();
         var min = $('.minutes').text();
 
