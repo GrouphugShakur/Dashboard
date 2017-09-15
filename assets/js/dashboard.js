@@ -36,7 +36,7 @@ function render(wd) {
   var currentWeather = wd.weather[0].description;
   var currentTemp = Math.round(wd.main.temp);
   var icon = wd.weather[0].icon;
-  var iconSrc = "http://openweathermap.org/img/w/" + icon + ".png";
+  var iconSrc = "https://openweathermap.org/img/w/" + icon + ".png";
 
   $('#currentLocation').html(currentLocation);
     console.log(currentLocation);
